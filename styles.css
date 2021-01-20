@@ -13,15 +13,19 @@ header {
   background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
 }
+
 h1 {
   font-size: 80px;
   color: white;
 }
+
 body {
   font-family: Montserrat;
 	margin: 0;
 }
+
 .about {
   display: flex;
   flex-direction: column;
@@ -33,6 +37,7 @@ body {
   padding: 20px;
   padding-top: 0;
   box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  line-height: 24px;
 }
 .about img {
   border-radius: 50%;
@@ -47,6 +52,13 @@ h2 {
 a {
   color: #129daf;
   text-decoration: none;
+}
+
+.intro{
+  display: flex;
+  width: 500px;
+  text-align: justify;
+
 }
 .skills {
   display: flex;
