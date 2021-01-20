@@ -89,9 +89,13 @@ a {
   text-transform: uppercase;
 }
 
+.progress-badge{
+font-weight: bold
+}
+
 .progress-value {
   position: absolute;
-  top: 2px;
+  top: 1px;
   right: 0;
   font-size: 0.8571em;
 }
@@ -103,7 +107,7 @@ a {
 
 .progress-bar {
   height: 5px;
-  background: #129daf;
+  background: rgba(89, 125, 28, 0.9);
 }
 html {
   overflow-x: hidden;
@@ -115,6 +119,7 @@ html {
 
 .timeline ul {
   padding: 50px 0;
+  text-align: center;
 }
 
 .timeline ul li {
@@ -123,7 +128,7 @@ html {
   width: 6px;
   margin: 0 auto;
   padding-top: 50px;
-  background: rgba(25, 105, 129, 0.4);
+  background: #129daf;
   color: white;
 }
 
@@ -136,7 +141,7 @@ html {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: rgba(18, 157, 175, 1);
+  background:  rgba(89, 125, 28, 0.9);
 }
 
 .timeline .bubble {
@@ -144,8 +149,9 @@ html {
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: rgba(18, 157, 175, 0.8);
+  background: rgba(89, 125, 28, 0.9);
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 .timeline .bubble::before {
@@ -164,7 +170,7 @@ html {
 .timeline ul li:nth-child(odd) .bubble::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent rgba(18, 157, 175, 0.8) transparent transparent;
+  border-color: transparent  rgba(89, 125, 28, 0.9) transparent transparent;
 }
 
 .timeline ul li:nth-child(even) .bubble {
@@ -174,7 +180,7 @@ html {
 .timeline ul li:nth-child(even) .bubble::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent rgba(18, 157, 175, 0.8);
+  border-color: transparent transparent transparent  rgba(89, 125, 28, 0.9);
 }
 
 time {
@@ -192,7 +198,7 @@ time {
 }
 
 .timeline ul li.in-view::after {
-  background: rgba(18, 157, 175, 1);
+  background:  rgba(89, 125, 28, 1);
 }
 
 .timeline .bubble {
@@ -225,10 +231,10 @@ time {
 iframe {
   margin-top: 30px;
   margin-bottom: 30px;
-	width: 100%;
+	width: 70%;
 }
 form {
-  width: 100%;
+  width: 70%;
 }
 
 .row {
@@ -292,6 +298,18 @@ textarea {
   font-size: 16px;
   color: white;
 }
+
+.trans {display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 70px auto;
+  padding: 20px;
+  padding-top: 0;
+}
+
+
 @media screen and (max-width: 900px) {
   h1 {
     padding: 10px;
