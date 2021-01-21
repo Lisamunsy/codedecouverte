@@ -22,8 +22,8 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
 
 h1 {
   display: flex;
-  font-size: 90px;
-  color: white;
+  font-size: 100px;
+  color: rgb(252, 252, 252);
   }
 
 body {
@@ -73,9 +73,6 @@ font-size: 20px;
 
 /* Formation */
 
-.timeline h2 {
-  text-align: center;
-}
 
 .timeline ul {
   padding: 50px 0;
@@ -277,24 +274,42 @@ h2 .trans{
 }
 
 .langues{
-  border:solid black 2px;
+  border:solid white 2px;
   width: 50%;
   padding-bottom: 10px;
   
 }
-
+/*
 .langues img{
   overflow: hidden;
-  width: 300px;
+  width: 70%;
   padding: 0;
-  margin:0;
+  margin-left: 0;
+  border-radius: 50%;
 }
+*/
+.globe{
+  overflow: hidden;
+  background-size: cover;
+  width: 300px;
+  height: 200px;
+}
+
 .langues-content{
-display: flex;
-justify-content :space-evenly;
+  display: flex;
+  justify-content :space-evenly;
+
 }
+.langues-content p{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 0%;
+  margin-top: 40px;
+}
+
 .soft{
-  border: solid black 2px;
+  border: solid white 2px;
   width: 50%;
 }
 
