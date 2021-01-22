@@ -279,22 +279,24 @@ h2 .trans{
   padding-bottom: 10px;
   
 }
-/*
+
 .langues img{
   overflow: hidden;
-  width: 70%;
+  width: 30%;
   padding: 0;
-  margin-left: 0;
-  border-radius: 50%;
+  border-radius: 10%;
+  margin-left: -10px;
+  height: 30% ;
 }
-*/
+/*
 .globe{
   overflow: hidden;
-  background-size: cover;
-  width: 300px;
+  width: 150px;
   height: 200px;
+  margin-left: 0;
+  padding-left: 0%;
 }
-
+*/
 .langues-content{
   display: flex;
   justify-content :space-evenly;
