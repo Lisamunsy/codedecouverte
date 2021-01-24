@@ -76,7 +76,7 @@ font-size: 20px;
 
 .timeline ul {
   padding: 50px 0;
-  text-align: center;
+  text-align: left;
 }
 
 .timeline ul li {
@@ -142,14 +142,14 @@ font-size: 20px;
 
 time {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-bottom: 8px;
   
 }
 
 .bubble span {
-  font-weight: bold;
+  font-weight: bolder;
 }
 .timeline ul li::after {
   transition: background 0.5s ease-in-out;
@@ -277,7 +277,8 @@ h2 .trans{
   border:solid white 2px;
   width: 50%;
   padding-bottom: 10px;
-  
+ 
+    
 }
 
 .langues img{
@@ -313,6 +314,12 @@ h2 .trans{
 .soft{
   border: solid white 2px;
   width: 50%;
+}
+
+.soft img{
+  overflow: hidden;
+  padding-top: 0;
+width: 100%;
 }
 
 /*Formulaire de contact */
