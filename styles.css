@@ -15,9 +15,9 @@ header {
 	align-items: flex-start;
   justify-content: center;
   background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
 }
 
 h1 {
@@ -28,8 +28,9 @@ h1 {
 
 body {
   font-family: Montserrat;
-	margin: 0;
-}
+  margin: 0;
+ }
+ 
 h2 {
   font-size: 34px;
   margin-top: 20px;
@@ -39,7 +40,17 @@ h2 {
 h3 {
 font-size: 20px;
 
+
 }
+/* Petit encart avec les coordonnées de contact
+
+.carte{
+ float: left;
+overflow: hidden;
+line-height: 1.2;
+font-size: 12px;
+}
+*/
 
 /* Présentation */
 
@@ -49,11 +60,12 @@ font-size: 20px;
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 70%;
+  width: 60%;
   margin: 70px auto;
   margin-top: 120px;
   padding: 20px;
   padding-top: 0;
+  padding-bottom: 0;
   box-shadow: 0px 5px 25px 0px #0b707e;
   line-height: 24px;
 }
@@ -92,7 +104,7 @@ font-size: 20px;
 .timeline ul li::after {
   content: "";
   position: absolute;
-  left: 50%;
+  left: 40%;
   bottom: 0;
   transform: translateX(-50%);
   width: 30px;
@@ -191,7 +203,7 @@ time {
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
-  width: 70%;
+  width: 60%;
   box-shadow: 0px 5px 25px 0px #0b707e;
 }
 
@@ -257,7 +269,7 @@ font-weight: bold
   padding: 20px;
   padding-top: 0;
   padding-bottom: 0;
-  width: 70%;
+  width: 60%;
   box-shadow: 0px 5px 25px 0px #0b707e;
   
 }
@@ -329,12 +341,18 @@ width: 100%;
 
 /*Formulaire de contact */
 
-.contact {
+.contact {  
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 70px auto;
-  width: 70%;
+  justify-content: center;
+  text-align: center;
+  margin:  auto;
+  padding: 20px;
+  padding-top: 0;
+  width: 60%;
+  box-shadow: 0px 5px 25px 0px #0b707e;
+  line-height: 24px;
 }
 /*
 iframe {
@@ -344,7 +362,7 @@ iframe {
 }
 */
 form {
-  width: 70%;
+  width: 100%;
 }
 
 .row {
@@ -364,9 +382,10 @@ form {
 }
 
 label {
-  font-size: 16px;
+  font-size: 18px;
   color: #999999;
   padding: 5px;
+  
 }
 
 input {
@@ -376,8 +395,9 @@ input {
   height: 40px;
   padding: 5px;
   margin-top: 5px;
-  font-size: 18px;
+  font-size: 16px;
   font-family: Montserrat;
+  
 }
 
 textarea {
@@ -417,19 +437,25 @@ textarea {
     padding: 10px;
   }
   .about {
-    width: 100%;
-    padding: 0;
+    width: 700px;
+    padding: 20px;
     margin: 70px auto;
   }
   .about p {
     padding: 0 15px;
   }
 
+.skills{
+width: 700px;
+}
   .skills-content {
     width: 100%;
     padding: 15px 0;
   }
 
+.trans{
+  width: 700px;
+}
   .timeline .bubble {
     width: 250px;
   }
@@ -438,14 +464,35 @@ textarea {
     /*250+45-6*/
   }
   .contact {
-    margin: 30px;
-    width: unset;
+    width:700px;
+    
   }
 }
+
+/*Affichage 600px*/
+
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 46px;
+    font-size: 80px;
+    padding: 10px;
   }
+
+
+  .about{
+width: 500px;
+  }
+  .skills{
+    width: 500px;
+    margin:  10PX auto;
+    padding: 10px auto;
+    justify-content: center;
+    align-content: center;
+  }
+
+    .trans{
+      width: 500px;
+    }
+
   .progress-value,
   .progress-badge {
     font-size: 12px;
@@ -467,6 +514,10 @@ textarea {
 	.skills-content {
     flex-direction: column;
   }
+.contact{
+  width: 500px;
+  margin: auto;
+}
   form {
     display: flex;
     flex-direction: column;
