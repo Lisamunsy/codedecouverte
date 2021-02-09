@@ -43,14 +43,16 @@ font-size: 20px;
 
 }
 /* Petit encart avec les coordonnées de contact
-
-.carte{
- float: left;
-overflow: hidden;
-line-height: 1.2;
-font-size: 12px;
-}
 */
+.carte{
+float: left;
+overflow: visible;
+line-height: 1.2;
+font-size: 18px;
+text-align: center;
+font-weight: bold
+}
+
 
 /* Présentation */
 
