@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Site de Lisa Munsy</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo&family=Oxanium&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Handlee&display=swap"
       rel="stylesheet"
@@ -14,7 +19,7 @@
   </head>
   <body>
     <nav>
-      <h2>Lisa Munsy</h2>
+      <h2><a href="#!"> Lisa Munsy</a></h2>
 
       <ul>
         <li><a href="#!"> Formation</a></li>
@@ -27,7 +32,7 @@
       <section class="about">
         <img
           class="avatar"
-          src="images/imagesitelisa.jpg"
+          src="/codedecouverte/images/imagesitelisa.jpg"
           alt="Photo de Lisa"
         />
 
@@ -38,46 +43,47 @@
             Je poursuis actuellement un formation intensive au sein de
             l'organisme Philiance afin d'obtenir le titre professionnel de
             "Developpeur Web et Web Mobile". Je me forme parallèlement au
-            language Python et aux bases de la cybersécurité.
+            language Python et aux bases de la cybersécurité. Je recherche un
+            stage ou une alternance pour consolider mes acquis.
           </p>
-          <a href="/"> Contact</a>
+          <div><a href="#!"> Contact</a></div>
         </div>
       </section>
 
       <section class="timeline">
-        <h2>Formation</h2>
-        <ul>
-          <!-- Début expérience 1 -->
-          <li>
-            <div class="bubble">
-              <time>2014 - 2016</time>
-              <span>IUT Genie Mecanique et Productique</span>
-              <br />(Diplôme non validé) <br />Evry, France
-            </div>
-          </li>
-          <!-- Fin expérience 1 -->
-
-          <!-- Début expérience 3 -->
-          <li>
-            <div class="bubble">
-              <time>2011</time>
-              <span
-                >BAC S mention Très Bien<br />Spécialité Physique-Chimie
-              </span>
-              <br />Epinay-sous-Sénart, France
-            </div>
-          </li>
-          <!-- Fin expérience 3 -->
-          <!-- Début expérience 4 -->
-          <li>
-            <div class="bubble">
-              <time>2011 - 2012</time>
-              <span>INSA de Rouen</span>
-              <br />Saint-Etienne-du-Rouvray, France
-            </div>
-          </li>
-          <!-- Fin expérience 4 -->
-        </ul>
+        <div class="timeline-content">
+          <ul>
+            <!-- Début expérience 1 -->
+            <li>
+              <div class="bubble">
+                <time>2014 - 2016</time>
+                <span>IUT Genie Mecanique et Productique</span>
+                <br />(Diplôme non validé) <br />Evry, France
+              </div>
+            </li>
+            <!-- Fin expérience 1 -->
+            <!-- Début expérience 4 -->
+            <li>
+              <div class="bubble">
+                <time>2011 - 2012</time>
+                <span>INSA de Rouen</span>
+                <br />Saint-Etienne-du-Rouvray, France
+              </div>
+            </li>
+            <!-- Fin expérience 4 -->
+            <!-- Début expérience 3 -->
+            <li>
+              <div class="bubble">
+                <time>2011</time>
+                <span
+                  >BAC S mention Très Bien<br />Spécialité Physique-Chimie
+                </span>
+                <br />Epinay-sous-Sénart, France
+              </div>
+            </li>
+            <!-- Fin expérience 3 -->
+          </ul>
+        </div>
       </section>
 
       <section class="skills">
@@ -144,6 +150,75 @@
         </div>
         <!-- Fin .skills-content -->
       </section>
+
+      <section class="trans">
+        <h2>
+          Compétences Transversales
+          <br />
+        </h2>
+
+        <div class="autres">
+          <div class="langues">
+            <h3>Langues</h3>
+
+            <div class="langues-content">
+              <img src="/codedecouverte/images/globe-tour.gif" />
+              <p>
+                <b>Anglais :</b> Courant
+                <br />
+                <br />
+                <b>Allemand :</b> Solides notions
+              </p>
+            </div>
+          </div>
+
+          <div class="soft">
+            <h3>Soft skills</h3>
+
+            <img
+              src="/codedecouverte/images/graphiqueSoftSkills.png"
+              alt="graphique Soft"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h2>Contact</h2>
+
+        <form name="contact" method="POST" data-netlify="true">
+          <div class="row">
+            <div class="form-group">
+              <label>Nom</label>
+              <input type="text" name="name" placeholder="Votre nom" required />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Votre email"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea
+              name="message"
+              placeholder="Votre message..."
+              required
+            ></textarea>
+          </div>
+          <button class="btn">Envoyer</button>
+        </form>
+      </section>
     </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script2.js"></script>
   </body>
 </html>

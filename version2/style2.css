@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Handlee", cursive; */
+  font-family: "Arvo", serif;
+  /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
+}
+
+body {
+  color: #fff;
+  /* background: linear-gradient(
+      0deg,
+      rgba(70, 69, 69, 0.507),
+      rgba(24, 23, 23, 0.301)
+    ),
+    url("/codedecouverte/images/fleurs-bleu.jpg") no-repeat  top/cover; */
+
+  /* background: linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  );  */
+  background: linear-gradient(to right, #43c6ac46, #1916545e),
+    url("/codedecouverte/images/cool-background.png") no-repeat center/cover;
+
+  height: 100vh;
+}
+nav {
+  width: 100%;
+  position: fixed;
+  height: 8vh;
+  /* background-color: #0707077c;
+  box-shadow: 0px 5px 25px 0px #000000; */
+  padding: 0 7.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+nav h2 {
+  font-size: 2rem;
+  font-family: "Oxanium", cursive;
+  transition: all ease-in-out 100ms;
+}
+nav h2:hover {
+  color: #082549;
+}
+nav ul {
+  list-style: none;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.7vw;
+}
+nav a {
+  font-family: "Oxanium", cursive;
+  text-decoration: none;
+  color: inherit;
+  transition: all ease-in-out 300ms;
+}
+nav a:hover {
+  color: #082549;
+}
+
+main {
+  height: 100%;
+  padding: 8vh 0 4vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+}
+
+.about {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+
+  width: 100%;
+  height: 400vw;
+
+  padding: 0 2rem 0 5rem;
+  /* box-shadow: 0px 5px 25px 0px #000000; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.avatar {
+  height: 25vw;
+  border-radius: 50%;
+  width: 25vw;
+  /* margin-left: 2vw; */
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  box-shadow: 0px 0px 10px 0px #ffffff;
+}
+
+.intro {
+  width: 50%;
+  text-align: justify;
+  font-size: 1.3vw;
+  /* padding: 0 7% 0 8%; */
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline,
+.skills,
+.trans,
+.contact {
+  display: none;
+}
+
+.timeline {
+  width: 100%;
+  height: 100%;
+  padding: 10vh 10vw;
+}
+.timeline-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
